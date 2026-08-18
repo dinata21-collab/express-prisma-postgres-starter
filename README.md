@@ -1,10 +1,17 @@
 # express-prisma-postgres-starter
 cara jalanin:
+
 npm install
+
 cp .env.example .env
+
 npm run docker:up
+
 npx prisma migrate dev --name init
+
 npm run dev
+
+
 
 Catatan teknis singkat:
 
