@@ -1,0 +1,29 @@
+{
+  "name": "express-prisma-postgres-starter",
+  "version": "1.0.0",
+  "description": "Minimal Express.js + Prisma + PostgreSQL (Docker) starter template",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": ["express", "prisma", "postgresql", "docker", "starter", "boilerplate"],
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
